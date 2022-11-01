@@ -9,7 +9,7 @@ const defaultValues = {
   audioPlayer: new Audio(),
   tracks: [
     {
-      name: "Leonell Cassio - The Blackest Bouquet",
+      name: "Bên Trên Tầng Lầu - Tăng Duy Tân",
       file: Track1,
     },
     {

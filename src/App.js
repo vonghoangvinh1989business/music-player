@@ -1,19 +1,20 @@
 import React from "react";
 import { MusicPlayerProvider } from "./contexts/MusicPlayerContext";
-import Marquee from "react-fast-marquee";
+import Container from "@mui/material/Container";
 import Header from "./components/Header";
 import TrackList from "./components/TrackList";
 import Controller from "./components/Controller";
+import "./App.css";
 
 function App() {
   return (
-    <MusicPlayerProvider>
-      <Marquee>
+    <Container className="container">
+      <MusicPlayerProvider>
         <Header />
-      </Marquee>
-      <TrackList />
-      <Controller />
-    </MusicPlayerProvider>
+        <TrackList />
+        <Controller />
+      </MusicPlayerProvider>
+    </Container>
   );
 }
 
